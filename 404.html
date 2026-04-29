@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found - GDGoC Aizu</title>
+    <style>
+        :root {
+            --primary-color: #4285F4; /* Google Blue */
+            --bg-color: #f8f9fa;
+            --text-color: #202124;
+            --card-bg: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .error-container {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 4rem 3rem;
+            max-width: 500px;
+            width: 90%;
+            border: 1px solid #dadce0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 上部のGDGカラーライン */
+        .error-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #4285F4 25%, #EA4335 25% 50%, #FBBC05 50% 75%, #34A853 75%);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 5rem;
+            color: var(--primary-color);
+            letter-spacing: -2px;
+            line-height: 1;
+        }
+
+        h2 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }
+
+        p {
+            color: #5f6368;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .back-button:hover {
+            background-color: #3367d6;
+            transform: translateY(-2px);
+        }
+        
+        .back-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>お探しのページは見つかりませんでした。<br>URLが間違っているか、ページが移動・削除された可能性があります。</p>
+        <a href="/" class="back-button">ポータルホームへ戻る</a>
+    </div>
+</body>
+</html>
