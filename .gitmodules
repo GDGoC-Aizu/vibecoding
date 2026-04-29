@@ -1,0 +1,12 @@
+[submodule "team1"]
+	path = team1
+	url = https://github.com/GDGoC-Aizu/vibecoding-team1
+[submodule "team2"]
+	path = team2
+	url = https://github.com/GDGoC-Aizu/vibecoding-team2
+[submodule "team3"]
+	path = team3
+	url = https://github.com/GDGoC-Aizu/vibecoding-team3
+[submodule "team4"]
+	path = team4
+	url = https://github.com/GDGoC-Aizu/vibecoding-team4
