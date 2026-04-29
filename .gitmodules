@@ -1,12 +1,12 @@
 [submodule "team1"]
 	path = team1
-	url = https://github.com/GDGoC-Aizu/vibecoding-team1
+	url = git@github.com:GDGoC-Aizu/vibecoding-team1.git
 [submodule "team2"]
 	path = team2
-	url = https://github.com/GDGoC-Aizu/vibecoding-team2
+	url = git@github.com:GDGoC-Aizu/vibecoding-team2.git
 [submodule "team3"]
 	path = team3
-	url = https://github.com/GDGoC-Aizu/vibecoding-team3
+	url = git@github.com:GDGoC-Aizu/vibecoding-team3.git
 [submodule "team4"]
 	path = team4
-	url = https://github.com/GDGoC-Aizu/vibecoding-team4
+	url = git@github.com:GDGoC-Aizu/vibecoding-team4.git
