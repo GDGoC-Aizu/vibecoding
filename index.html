@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDGoC Aizu - Vibecoding Hackathon</title>
+    <style>
+        :root {
+            --primary-color: #4285F4; /* Google Blue */
+            --bg-color: #f8f9fa;
+            --text-color: #202124;
+            --card-bg: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--text-color);
+            letter-spacing: -0.5px;
+        }
+
+        p.subtitle {
+            color: #5f6368;
+            font-size: 1.1rem;
+            margin-top: 0.75rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 900px;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.2s ease;
+            border: 1px solid #dadce0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+
+        .card h2 {
+            margin: 0 0 1rem 0;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .card p {
+            margin: 0;
+            color: #5f6368;
+            font-size: 0.95rem;
+        }
+        
+        /* GDGカラーのアクセント（ホバー時にラインが伸びる） */
+        .card::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4285F4 25%, #EA4335 25% 50%, #FBBC05 50% 75%, #34A853 75%);
+            transition: width 0.3s ease;
+            margin: 1.5rem auto 0;
+            border-radius: 3px;
+        }
+
+        .card:hover::after {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vibecoding Hackathon</h1>
+        <p class="subtitle">GDGoC Aizu - 各チームの成果物ポータル</p>
+    </header>
+
+    <main class="grid-container">
+        <a href="./team1/" class="card">
+            <h2>Team 1</h2>
+            <p>プロジェクトを見る &rarr;</p>
+        </a>
+        <a href="./team2/" class="card">
+            <h2>Team 2</h2>
+            <p>プロジェクトを見る &rarr;</p>
+        </a>
+        <a href="./team3/" class="card">
+            <h2>Team 3</h2>
+            <p>プロジェクトを見る &rarr;</p>
+        </a>
+        <a href="./team4/" class="card">
+            <h2>Team 4</h2>
+            <p>プロジェクトを見る &rarr;</p>
+        </a>
+    </main>
+</body>
+</html>
